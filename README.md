@@ -1,27 +1,15 @@
-# Prism themes
+# WizNote Prism themes
+# 专门为了给为知笔记做自定义样式表用的
 
 [![Build Status](https://github.com/PrismJS/prism-themes/workflows/CI/badge.svg)](https://github.com/PrismJS/prism-themes/actions)
 [![npm](https://img.shields.io/npm/dw/prism-themes.svg)](https://www.npmjs.com/package/prism-themes)
 
 This repository lists a selection of additional themes for the [Prism syntax highlighting library](http://prismjs.com/).
 
-## How to use a theme
+## 如何使用
 
-To use one of the themes, just include the theme's CSS file in your page. Example:
-
-```html
-<!DOCTYPE html>
-<html>
-    <head>
-        ...
-        <link href="themes/prism-ghcolors.css" rel="stylesheet" />
-    </head>
-    <body>
-        ...
-        <script src="prism.js"></script>
-    </body>
-</html>
-```
+1. 参考：https://www.wiz.cn/zh-cn/wiz-new-desktop-custom.html
+2. 根据下方效果，选用具体的样式表
 
 ## Contributing new themes
 

@@ -8,7 +8,7 @@ Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/b
 
 */
 code[class*="language-"],
-pre[class*="language-"] {
+.code-block {
 	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
 	font-size: 14px;
 	line-height: 1.375;
@@ -32,20 +32,20 @@ pre > code[class*="language-"] {
 	font-size: 1em;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+.code-block::-moz-selection, .code-block ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	background: #dfe2f1;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+.code-block::selection, .code-block ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
 	background: #dfe2f1;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+.code-block {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
@@ -57,96 +57,96 @@ pre[class*="language-"] {
 	border-radius: .3em;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.style-token.style-comment,
+.style-token.style-prolog,
+.style-token.style-doctype,
+.style-token.style-cdata {
 	color: #898ea4;
 }
 
-.token.punctuation {
+.style-token.style-punctuation {
 	color: #5e6687;
 }
 
-.token.namespace {
+.style-token.style-namespace {
 	opacity: .7;
 }
 
-.token.operator,
-.token.boolean,
-.token.number {
+.style-token.style-operator,
+.style-token.style-boolean,
+.style-token.style-number {
 	color: #c76b29;
 }
 
-.token.property {
+.style-token.style-property {
 	color: #c08b30;
 }
 
-.token.tag {
+.style-token.style-tag {
 	color: #3d8fd1;
 }
 
-.token.string {
+.style-token.style-string {
 	color: #22a2c9;
 }
 
-.token.selector {
+.style-token.style-selector {
 	color: #6679cc;
 }
 
-.token.attr-name {
+.style-token.style-attr-name {
 	color: #c76b29;
 }
 
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
+.style-token.style-entity,
+.style-token.style-url,
+.language-css .style-token.style-string,
+.style .style-token.style-string {
 	color: #22a2c9;
 }
 
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.unit {
+.style-token.style-attr-value,
+.style-token.style-keyword,
+.style-token.control,
+.style-token.directive,
+.style-token.unit {
 	color: #ac9739;
 }
 
-.token.statement,
-.token.regex,
-.token.atrule {
+.style-token.statement,
+.style-token.style-regex,
+.style-token.style-atrule {
 	color: #22a2c9;
 }
 
-.token.placeholder,
-.token.variable {
+.style-token.placeholder,
+.style-token.style-variable {
 	color: #3d8fd1;
 }
 
-.token.deleted {
+.style-token.style-deleted {
 	text-decoration: line-through;
 }
 
-.token.inserted {
+.style-token.style-inserted {
 	border-bottom: 1px dotted #202746;
 	text-decoration: none;
 }
 
-.token.italic {
-	font-style: italic;
+.style-token.style-italic {
+	font-style: style-italic;
 }
 
-.token.important,
-.token.bold {
-	font-weight: bold;
+.style-token.style-important,
+.style-token.style-bold {
+	font-weight: style-bold;
 }
 
-.token.important {
+.style-token.style-important {
 	color: #c94922;
 }
 
-.token.entity {
+.style-token.style-entity {
 	cursor: help;
 }
 
@@ -156,13 +156,13 @@ pre > code.highlight {
 }
 
 /* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
+ * http://prismjs.com/plugins/line-style-numbers/
  */
-.line-numbers.line-numbers .line-numbers-rows {
+.line-style-numbers.line-style-numbers .line-style-numbers-rows {
 	border-right-color: #dfe2f1;
 }
 
-.line-numbers .line-numbers-rows > span:before {
+.line-style-numbers .line-style-numbers-rows > span:before {
 	color: #979db4;
 }
 

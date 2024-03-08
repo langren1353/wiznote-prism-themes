@@ -7,7 +7,7 @@
  * @license MIT
  */
 code[class*="language-"],
-pre[class*="language-"] {
+.code-block {
 	color: #e3eaf2;
 	background: none;
 	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
@@ -26,29 +26,29 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
+.code-block::-moz-selection,
+.code-block ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
 	background: #3c526d;
 }
 
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
+.code-block::selection,
+.code-block ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
 	background: #3c526d;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+.code-block {
 	padding: 1em;
 	margin: 0.5em 0;
 	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+.code-block {
 	background: #111b27;
 }
 
@@ -59,153 +59,153 @@ pre[class*="language-"] {
 	white-space: normal;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.style-token.style-comment,
+.style-token.style-prolog,
+.style-token.style-doctype,
+.style-token.style-cdata {
 	color: #8da1b9;
 }
 
-.token.punctuation {
+.style-token.style-punctuation {
 	color: #e3eaf2;
 }
 
-.token.delimiter.important,
-.token.selector .parent,
-.token.tag,
-.token.tag .token.punctuation {
+.style-token.delimiter.style-important,
+.style-token.style-selector .parent,
+.style-token.style-tag,
+.style-token.style-tag .style-token.style-punctuation {
 	color: #66cccc;
 }
 
-.token.attr-name,
-.token.boolean,
-.token.boolean.important,
-.token.number,
-.token.constant,
-.token.selector .token.attribute {
+.style-token.style-attr-name,
+.style-token.style-boolean,
+.style-token.style-boolean.style-important,
+.style-token.style-number,
+.style-token.style-constant,
+.style-token.style-selector .style-token.attribute {
 	color: #e6d37a;
 }
 
-.token.class-name,
-.token.key,
-.token.parameter,
-.token.property,
-.token.property-access,
-.token.variable {
+.style-token.style-class-name,
+.style-token.key,
+.style-token.parameter,
+.style-token.style-property,
+.style-token.style-property-access,
+.style-token.style-variable {
 	color: #6cb8e6;
 }
 
-.token.attr-value,
-.token.inserted,
-.token.color,
-.token.selector .token.value,
-.token.string,
-.token.string .token.url-link {
+.style-token.style-attr-value,
+.style-token.style-inserted,
+.style-token.color,
+.style-token.style-selector .style-token.value,
+.style-token.style-string,
+.style-token.style-string .style-token.style-url-link {
 	color: #91d076;
 }
 
-.token.builtin,
-.token.keyword-array,
-.token.package,
-.token.regex {
+.style-token.style-builtin,
+.style-token.style-keyword-array,
+.style-token.package,
+.style-token.style-regex {
 	color: #f4adf4;
 }
 
-.token.function,
-.token.selector .token.class,
-.token.selector .token.id {
+.style-token.style-function,
+.style-token.style-selector .style-token.class,
+.style-token.style-selector .style-token.id {
 	color: #c699e3;
 }
 
-.token.atrule .token.rule,
-.token.combinator,
-.token.keyword,
-.token.operator,
-.token.pseudo-class,
-.token.pseudo-element,
-.token.selector,
-.token.unit {
+.style-token.style-atrule .style-token.rule,
+.style-token.combinator,
+.style-token.style-keyword,
+.style-token.style-operator,
+.style-token.pseudo-class,
+.style-token.pseudo-element,
+.style-token.style-selector,
+.style-token.unit {
 	color: #e9ae7e;
 }
 
-.token.deleted,
-.token.important {
+.style-token.style-deleted,
+.style-token.style-important {
 	color: #cd6660;
 }
 
-.token.keyword-this,
-.token.this {
+.style-token.style-keyword-this,
+.style-token.this {
 	color: #6cb8e6;
 }
 
-.token.important,
-.token.keyword-this,
-.token.this,
-.token.bold {
-	font-weight: bold;
+.style-token.style-important,
+.style-token.style-keyword-this,
+.style-token.this,
+.style-token.style-bold {
+	font-weight: style-bold;
 }
 
-.token.delimiter.important {
+.style-token.delimiter.style-important {
 	font-weight: inherit;
 }
 
-.token.italic {
-	font-style: italic;
+.style-token.style-italic {
+	font-style: style-italic;
 }
 
-.token.entity {
+.style-token.style-entity {
 	cursor: help;
 }
 
-.language-markdown .token.title,
-.language-markdown .token.title .token.punctuation {
+.language-markdown .style-token.title,
+.language-markdown .style-token.title .style-token.style-punctuation {
 	color: #6cb8e6;
-	font-weight: bold;
+	font-weight: style-bold;
 }
 
-.language-markdown .token.blockquote.punctuation {
+.language-markdown .style-token.blockquote.style-punctuation {
 	color: #f4adf4;
 }
 
-.language-markdown .token.code {
+.language-markdown .style-token.code {
 	color: #66cccc;
 }
 
-.language-markdown .token.hr.punctuation {
+.language-markdown .style-token.hr.style-punctuation {
 	color: #6cb8e6;
 }
 
-.language-markdown .token.url .token.content {
+.language-markdown .style-token.style-url .style-token.content {
 	color: #91d076;
 }
 
-.language-markdown .token.url-link {
+.language-markdown .style-token.style-url-link {
 	color: #e6d37a;
 }
 
-.language-markdown .token.list.punctuation {
+.language-markdown .style-token.list.style-punctuation {
 	color: #f4adf4;
 }
 
-.language-markdown .token.table-header {
+.language-markdown .style-token.table-header {
 	color: #e3eaf2;
 }
 
-.language-json .token.operator {
+.language-json .style-token.style-operator {
 	color: #e3eaf2;
 }
 
-.language-scss .token.variable {
+.language-scss .style-token.style-variable {
 	color: #66cccc;
 }
 
 /* overrides color-values for the Show Invisibles plugin
  * https://prismjs.com/plugins/show-invisibles/
  */
-.token.token.tab:not(:empty):before,
-.token.token.cr:before,
-.token.token.lf:before,
-.token.token.space:before {
+.style-token.style-token.tab:not(:empty):before,
+.style-token.style-token.cr:before,
+.style-token.style-token.lf:before,
+.style-token.style-token.space:before {
 	color: #8da1b9;
 }
 
@@ -249,59 +249,59 @@ div.code-toolbar > .toolbar.toolbar > .toolbar-item > span:focus {
 	box-shadow: 0 1px #3c526d;
 }
 
-pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows > span:hover:before {
+pre[id].linkable-line-style-numbers.linkable-line-style-numbers span.line-style-numbers-rows > span:hover:before {
 	background-color: #8da1b918;
 }
 
 /* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
+ * http://prismjs.com/plugins/line-style-numbers/
  */
-.line-numbers.line-numbers .line-numbers-rows {
+.line-style-numbers.line-style-numbers .line-style-numbers-rows {
 	border-right: 1px solid #0b121b;
 	background: #0b121b7a;
 }
 
-.line-numbers .line-numbers-rows > span:before {
+.line-style-numbers .line-style-numbers-rows > span:before {
 	color: #8da1b9da;
 }
 
 /* overrides color-values for the Match Braces plugin
  * https://prismjs.com/plugins/match-braces/
  */
-.rainbow-braces .token.token.punctuation.brace-level-1,
-.rainbow-braces .token.token.punctuation.brace-level-5,
-.rainbow-braces .token.token.punctuation.brace-level-9 {
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-1,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-5,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-9 {
 	color: #e6d37a;
 }
 
-.rainbow-braces .token.token.punctuation.brace-level-2,
-.rainbow-braces .token.token.punctuation.brace-level-6,
-.rainbow-braces .token.token.punctuation.brace-level-10 {
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-2,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-6,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-10 {
 	color: #f4adf4;
 }
 
-.rainbow-braces .token.token.punctuation.brace-level-3,
-.rainbow-braces .token.token.punctuation.brace-level-7,
-.rainbow-braces .token.token.punctuation.brace-level-11 {
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-3,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-7,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-11 {
 	color: #6cb8e6;
 }
 
-.rainbow-braces .token.token.punctuation.brace-level-4,
-.rainbow-braces .token.token.punctuation.brace-level-8,
-.rainbow-braces .token.token.punctuation.brace-level-12 {
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-4,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-8,
+.rainbow-braces .style-token.style-token.style-punctuation.brace-level-12 {
 	color: #c699e3;
 }
 
 /* overrides color-values for the Diff Highlight plugin
  * https://prismjs.com/plugins/diff-highlight/
  */
-pre.diff-highlight > code .token.token.deleted:not(.prefix),
-pre > code.diff-highlight .token.token.deleted:not(.prefix) {
+pre.diff-highlight > code .style-token.style-token.style-deleted:not(.prefix),
+pre > code.diff-highlight .style-token.style-token.style-deleted:not(.prefix) {
 	background-color: #cd66601f;
 }
 
-pre.diff-highlight > code .token.token.inserted:not(.prefix),
-pre > code.diff-highlight .token.token.inserted:not(.prefix) {
+pre.diff-highlight > code .style-token.style-token.style-inserted:not(.prefix),
+pre > code.diff-highlight .style-token.style-token.style-inserted:not(.prefix) {
 	background-color: #91d0761f;
 }
 

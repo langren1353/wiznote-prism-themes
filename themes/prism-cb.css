@@ -9,7 +9,7 @@
 
 /* =====   ===== */
 code[class*="language-"],
-pre[class*="language-"] {
+.code-block {
 	color: #fff;
 	text-shadow: 0 1px 1px #000;
 	font-family: Menlo, Monaco, "Courier New", monospace;
@@ -32,18 +32,18 @@ pre[class*="language-"] {
 	hyphens: none;
 }
 
-pre[class*="language-"] code {
+.code-block code {
 	float: left;
 	padding: 0 15px 0 0;
 }
 
-pre[class*="language-"],
+.code-block,
 :not(pre) > code[class*="language-"] {
 	background: #222;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+.code-block {
 	padding: 15px;
 	margin: 1em 0;
 	overflow: auto;
@@ -61,66 +61,66 @@ pre[class*="language-"] {
 	border-radius: 3px;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.style-token.style-comment,
+.style-token.style-prolog,
+.style-token.style-doctype,
+.style-token.style-cdata {
 	color: #797979;
 }
 
-.token.selector,
-.token.operator,
-.token.punctuation {
+.style-token.style-selector,
+.style-token.style-operator,
+.style-token.style-punctuation {
 	color: #fff;
 }
 
-.token.namespace {
+.style-token.style-namespace {
 	opacity: .7;
 }
 
-.token.tag,
-.token.boolean {
+.style-token.style-tag,
+.style-token.style-boolean {
 	color: #ffd893;
 }
 
-.token.atrule,
-.token.attr-value,
-.token.hex,
-.token.string {
+.style-token.style-atrule,
+.style-token.style-attr-value,
+.style-token.hex,
+.style-token.style-string {
 	color: #B0C975;
 }
 
-.token.property,
-.token.entity,
-.token.url,
-.token.attr-name,
-.token.keyword {
+.style-token.style-property,
+.style-token.style-entity,
+.style-token.style-url,
+.style-token.style-attr-name,
+.style-token.style-keyword {
 	color: #c27628;
 }
 
-.token.regex {
+.style-token.style-regex {
 	color: #9B71C6;
 }
 
-.token.entity {
+.style-token.style-entity {
 	cursor: help;
 }
 
-.token.function,
-.token.constant {
+.style-token.style-function,
+.style-token.style-constant {
 	color: #e5a638;
 }
 
-.token.variable {
+.style-token.style-variable {
 	color: #fdfba8;
 }
 
-.token.number {
+.style-token.style-number {
 	color: #8799B0;
 }
 
-.token.important,
-.token.deliminator {
+.style-token.style-important,
+.style-token.deliminator {
 	color: #E45734;
 }
 
@@ -139,8 +139,8 @@ pre[class*="language-"] {
 	border-radius: 8px;
 }
 
-/* for line numbers */
+/* for line style-numbers */
 /* span instead of span:before for a two-toned border */
-.line-numbers .line-numbers-rows > span {
+.line-style-numbers .line-style-numbers-rows > span {
 	border-right: 3px #d9d336 solid;
 }

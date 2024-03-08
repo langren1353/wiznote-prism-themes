@@ -7,7 +7,7 @@ Generated with Base16 Builder (https://github.com/base16-builder/base16-builder)
 */
 
 code[class*="language-"],
-pre[class*="language-"] {
+.code-block {
 	font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
 	font-size: 14px;
 	line-height: 1.375;
@@ -33,20 +33,20 @@ pre > code[class*="language-"] {
 	font-size: 1em;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+.code-block::-moz-selection, .code-block ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	background: #435643;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+.code-block::selection, .code-block ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
 	text-shadow: none;
 	background: #435643;
 }
 
 /* Code blocks */
-pre[class*="language-"] {
+.code-block {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
@@ -58,91 +58,91 @@ pre[class*="language-"] {
 	border-radius: .3em;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.style-token.style-comment,
+.style-token.style-prolog,
+.style-token.style-doctype,
+.style-token.style-cdata {
 	color: #535f53;
 }
 
-.token.punctuation {
+.style-token.style-punctuation {
 	color: #535f53;
 }
 
-.token.namespace {
+.style-token.style-namespace {
 	opacity: .7;
 }
 
-.token.tag,
-.token.operator,
-.token.number {
+.style-token.style-tag,
+.style-token.style-operator,
+.style-token.style-number {
 	color: #a2b34d;
 }
 
-.token.property,
-.token.function {
+.style-token.style-property,
+.style-token.style-function {
 	color: #687d68;
 }
 
-.token.tag-id,
-.token.selector,
-.token.atrule-id {
+.style-token.style-tag-id,
+.style-token.style-selector,
+.style-token.style-atrule-id {
 	color: #f0fff0;
 }
 
 code.language-javascript,
-.token.attr-name {
+.style-token.style-attr-name {
 	color: #b3d6b3;
 }
 
 code.language-css,
 code.language-scss,
-.token.boolean,
-.token.string,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.language-scss .token.string,
-.style .token.string,
-.token.attr-value,
-.token.keyword,
-.token.control,
-.token.directive,
-.token.unit,
-.token.statement,
-.token.regex,
-.token.atrule {
+.style-token.style-boolean,
+.style-token.style-string,
+.style-token.style-entity,
+.style-token.style-url,
+.language-css .style-token.style-string,
+.language-scss .style-token.style-string,
+.style .style-token.style-string,
+.style-token.style-attr-value,
+.style-token.style-keyword,
+.style-token.control,
+.style-token.directive,
+.style-token.unit,
+.style-token.statement,
+.style-token.style-regex,
+.style-token.style-atrule {
 	color: #e5fb79;
 }
 
-.token.placeholder,
-.token.variable {
+.style-token.placeholder,
+.style-token.style-variable {
 	color: #e5fb79;
 }
 
-.token.deleted {
+.style-token.style-deleted {
 	text-decoration: line-through;
 }
 
-.token.inserted {
+.style-token.style-inserted {
 	border-bottom: 1px dotted #f0fff0;
 	text-decoration: none;
 }
 
-.token.italic {
-	font-style: italic;
+.style-token.style-italic {
+	font-style: style-italic;
 }
 
-.token.important,
-.token.bold {
-	font-weight: bold;
+.style-token.style-important,
+.style-token.style-bold {
+	font-weight: style-bold;
 }
 
-.token.important {
+.style-token.style-important {
 	color: #b3d6b3;
 }
 
-.token.entity {
+.style-token.style-entity {
 	cursor: help;
 }
 
@@ -152,13 +152,13 @@ pre > code.highlight {
 }
 
 /* overrides color-values for the Line Numbers plugin
- * http://prismjs.com/plugins/line-numbers/
+ * http://prismjs.com/plugins/line-style-numbers/
  */
-.line-numbers.line-numbers .line-numbers-rows {
+.line-style-numbers.line-style-numbers .line-style-numbers-rows {
 	border-right-color: #2c302c;
 }
 
-.line-numbers .line-numbers-rows > span:before {
+.line-style-numbers .line-style-numbers-rows > span:before {
 	color: #3b423b;
 }
 
